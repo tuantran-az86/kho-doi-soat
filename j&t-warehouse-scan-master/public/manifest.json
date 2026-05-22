@@ -1,0 +1,21 @@
+{
+  "name": "SPRINTER NỘI BỘ",
+  "short_name": "SPRINTER",
+  "description": "Hệ thống kiểm soát đối soát trực ca, quét mã vạch siêu nhạy và đồng bộ thời gian thực Google Sheets dành cho nhân viên bưu cục J&T.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#0f172a",
+  "icons": [
+    {
+      "src": "https://img.icons8.com/color/192/express-delivery.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "https://img.icons8.com/color/512/express-delivery.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

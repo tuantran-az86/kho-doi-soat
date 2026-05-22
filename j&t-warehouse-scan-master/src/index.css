@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  
+  --color-jt-red: #E60012;
+  --color-jt-red-hover: #C5000F;
+  --color-jt-green: #02b85c;
+  --color-jt-green-hover: #019047;
+}
+
+/* Custom styling to ensure inputs are non-zooming on Safari iOS (>=16px font-size) */
+input, select, textarea {
+  font-size: 16px !important;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #0b0f19;
+  color: #f1f5f9;
+}
+
+/* Row Flash Highlight Transitions */
+@keyframes flashRed {
+  0% { background-color: rgba(230, 0, 18, 0.25); }
+  100% { background-color: transparent; }
+}
+.animate-flash-red {
+  animation: flashRed 1.8s cubic-bezier(0.1, 0.9, 0.2, 1) forwards;
+}
+
+@keyframes flashGreen {
+  0% { background-color: rgba(16, 185, 129, 0.25); }
+  100% { background-color: transparent; }
+}
+.animate-flash-green {
+  animation: flashGreen 1.8s cubic-bezier(0.1, 0.9, 0.2, 1) forwards;
+}
+
+/* Laser scan animation */
+@keyframes laserSweep {
+  0% { top: 4%; }
+  50% { top: 96%; }
+  100% { top: 4%; }
+}
+.animate-laser-sweep {
+  animation: laserSweep 2s ease-in-out infinite;
+}
+
+@keyframes pulseBorder {
+  0%, 100% { border-color: rgba(230, 0, 18, 0.4); }
+  50% { border-color: rgba(230, 0, 18, 1); }
+}
+.animate-pulse-border {
+  animation: pulseBorder 2s ease-in-out infinite;
+}
+
+
+

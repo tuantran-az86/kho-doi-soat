@@ -1,0 +1,6 @@
+{
+  "name": "SPRINTER NỘI BỘ",
+  "description": "Hệ thống kiểm soát đối soát trực ca, quét mã vạch siêu nhạy và đồng bộ thời gian thực Google Sheets dành cho nhân viên bưu cục J&T.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
